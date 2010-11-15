@@ -1,6 +1,6 @@
 # prompts
 if [[ $TERM == "dumb" ]]; then	# in emacs
-    PS1='%(?..[%?])%!:%~%# '
+    PS1='% '
     # for tramp to not hang, need the following. cf:
     # http://www.emacswiki.org/emacs/TrampMode
     unsetopt zle
