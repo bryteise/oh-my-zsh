@@ -1,3 +1,4 @@
+# make screen titles
 case "$TERM" in
     xterm*|rxvt*)
 	    preexec () {
@@ -12,3 +13,6 @@ case "$TERM" in
 	    preexec () { print -Pn "\033k\033\134\033k%m[$1]\033\134" }
 	    ;;
 esac
+
+# define custom extract file extensions
+compdef '_files -g "*.gz *.tgz *.bz2 *.tbz *.zip *.rar *.tar *.lha"' extract_archive
