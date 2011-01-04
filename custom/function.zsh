@@ -46,3 +46,27 @@ extract_archive () {
         fi
     done
 }
+
+# copy files to directory, if it doesn't exist try and create it
+function dcp () {
+    args="$@"
+    shift $(($# - 1))
+    if [[ ! -d $1 ]]; then
+	mkdir -p $1
+    fi
+    if [[ $? -eq 0 ]]; then
+	cp `echo $args`
+    fi
+}
+
+# move files to directory, if it doesn't exist try and create it
+function dmv () {
+    args="$@"
+    shift $(($# - 1))
+    if [[ ! -d $1 ]]; then
+	mkdir -p $1
+    fi
+    if [[ $? -eq 0 ]]; then
+	mv `echo $args`
+    fi
+}
