@@ -16,3 +16,9 @@ alias issh="ssh -F /etc/ssh/ssh_config"
 
 # scp to internal network
 alias iscp="scp -F /etc/ssh/ssh_config"
+
+# monitor dmesg for updates
+alias wdmesg="watch 'dmesg | tail -20'"
+
+# extract files
+alias ex=extract_archive
