@@ -22,3 +22,6 @@ alias wdmesg="watch 'dmesg | tail -20'"
 
 # extract files
 alias ex=extract_archive
+
+# git to g
+alias g=git
