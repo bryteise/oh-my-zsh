@@ -70,3 +70,11 @@ function dmv () {
 	mv `echo $args`
     fi
 }
+
+# create a new tmux session and attach to it
+function tmux-new-session () {
+    tmux new-session -d -s $1
+    tmux new-window -t $1:1
+    tmux rename-window -t $1:1 new
+    tmux -2 attach-session -t $1
+}
