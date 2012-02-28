@@ -20,9 +20,13 @@ extract_archive () {
     elif [[ $lower == *.gz ]]; then
         gunzip $1
     elif [[ $lower == *.tar.bz2 || $lower == *.tbz ]]; then
-        bunzip2 -c $1 | tar xfv -
+        pbunzip2 -c $1 | tar xfv -
     elif [[ $lower == *.bz2 ]]; then
-        bunzip2 $1
+        pbunzip2 $1
+    elif [[ $lower == *.tar.xz || $lower == *.txz ]]; then
+	xzcat $1 | tar xfv -
+    elif [[ $lower == *.xz ]]; then
+	xz -d $1
     elif [[ $lower == *.zip ]]; then
         unzip $1
     elif [[ $lower == *.rar ]]; then
