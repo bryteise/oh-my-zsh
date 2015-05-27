@@ -77,8 +77,5 @@ function dmv () {
 
 # create a new tmux session and attach to it
 function tmux-new-session () {
-    tmux new-session -d -s $1
-    tmux new-window -t $1:1
-    tmux rename-window -t $1:1 new
-    tmux -2 attach-session -t $1
+    tmux -L $1 new-session -s $1
 }
