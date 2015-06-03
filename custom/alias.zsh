@@ -7,7 +7,7 @@ alias lemp="LESS='+/^EXAMPLE' man "
 
 # make tmux a little less verbose
 alias tmuxa="tmux attach -t"
-alias tmuxn="tmux-new-session"
+alias tmuxn="tmux new -s"
 alias tmuxl="tmux list-session"
 
 # indent settings for the linux kernel

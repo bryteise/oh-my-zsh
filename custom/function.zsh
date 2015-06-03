@@ -74,8 +74,3 @@ function dmv () {
 	mv `echo $args`
     fi
 }
-
-# create a new tmux session and attach to it
-function tmux-new-session () {
-    tmux -L $1 new-session -s $1
-}
