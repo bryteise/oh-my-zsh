@@ -5,6 +5,6 @@ export VISUAL="emacsclient -t -a ''"
 path=(~/bin /usr/local/bin $path)
 # Get terminal color settings right
 if [ -e /usr/share/terminfo/x/xterm-256color ] && \
-       [ "$COLORTERM" = "xfce4-terminal" ]; then
+       [ "$TERM" = "xterm" ]; then
     export TERM=xterm-256color
 fi
