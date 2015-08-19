@@ -25,6 +25,9 @@ function omz_history {
   fi
 }
 
+HISTSIZE=50000
+SAVEHIST=50000
+
 # Timestamp format
 case ${HIST_STAMPS-} in
   "mm/dd/yyyy") alias history='omz_history -f' ;;
