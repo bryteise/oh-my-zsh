@@ -8,3 +8,8 @@ if [ -e /usr/share/terminfo/x/xterm-256color ] && \
        [ "$TERM" = "xterm" ]; then
     export TERM=xterm-256color
 fi
+
+if [ -e /usr/share/terminfo/s/screen-256color ] && \
+       [ "$TERM" = "screen" ]; then
+    export TERM=screen-256color
+fi
