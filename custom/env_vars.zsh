@@ -15,3 +15,5 @@ if [ -e /usr/share/terminfo/s/screen-256color ] && \
 fi
 # Set rust source path for racer
 export RUST_SRC_PATH=~/src/rust/src
+# Add additonal man page locations
+export MANPATH=/usr/share/man:$MANPATH
