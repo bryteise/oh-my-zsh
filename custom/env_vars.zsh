@@ -2,7 +2,7 @@
 export EDITOR="emacsclient -t -a ''"
 export VISUAL="emacsclient -t -a ''"
 # export path to include personal bin
-path=(~/bin /usr/local/bin ~/.cargo/bin $path)
+path=(~/bin /usr/lib/ccache/bin /usr/local/bin ~/.cargo/bin $path)
 # Get terminal color settings right
 if [ -e /usr/share/terminfo/x/xterm-256color ] && \
        [ "$TERM" = "xterm" ]; then
