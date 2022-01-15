@@ -25,8 +25,12 @@ function omz_history {
   fi
 }
 
+# Custom history configs
 HISTSIZE=50000
-SAVEHIST=50000
+SAVEHIST=40000
+setopt hist_ignore_all_dups
+setopt hist_find_no_dups
+setopt hist_save_no_dups
 
 # Timestamp format
 case ${HIST_STAMPS-} in
