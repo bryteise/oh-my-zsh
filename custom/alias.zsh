@@ -12,5 +12,5 @@ alias tmuxl="tmux list-session"
 alias g=git
 
 # youtube-dl
-alias ydv="youtube-dl --format mp4 --restrict-filenames -o '%(title)s.%(ext)s'"
-alias yds="youtube-dl --audio-format aac -x --restrict-filenames -o '%(title)s.%(ext)s'"
+alias ydv="yt-dlp -N 4 --format mp4 --restrict-filenames -o '%(title)s.%(ext)s'"
+alias yds="yt-dlp -N 4 --audio-format aac -x --restrict-filenames -o '%(title)s.%(ext)s'"
