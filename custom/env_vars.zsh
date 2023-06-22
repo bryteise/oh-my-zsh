@@ -4,7 +4,7 @@ export VISUAL="emacsclient -t -a ''"
 # Custom go path
 export GOPATH=~/.go
 # export path to include personal bin
-path=(~/bin /usr/lib/ccache/bin /usr/local/bin ~/.cargo/bin ~/.go/bin $path)
+path=(~/bin ~/.cargo/bin ~/.go/bin /usr/lib/ccache/bin /usr/local/bin $path)
 # Get terminal color settings right
 if [ -e /usr/share/terminfo/x/xterm-256color ] && \
        [ "$TERM" = "xterm" ]; then
