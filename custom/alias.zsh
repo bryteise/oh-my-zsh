@@ -14,3 +14,8 @@ alias g=git
 # youtube-dl
 alias ydv="yt-dlp -N 4 --format mp4 --restrict-filenames -o '%(title)s.%(ext)s'"
 alias yds="yt-dlp -N 4 --audio-format aac -x --restrict-filenames -o '%(title)s.%(ext)s'"
+
+# ssh shortcuts
+alias sshp="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
+alias sshh="ssh -o UserKnownHostsFile=/dev/null"
+alias sshhp="ssh -o UserKnownHostsFile=/dev/null -o PreferredAuthentications=password -o PubkeyAuthentication=no"
