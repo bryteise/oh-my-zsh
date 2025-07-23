@@ -19,3 +19,7 @@ alias yds="yt-dlp -N 4 --audio-format aac -x --restrict-filenames -o '%(title)s.
 alias sshp="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
 alias sshh="ssh -o UserKnownHostsFile=/dev/null"
 alias sshhp="ssh -o UserKnownHostsFile=/dev/null -o PreferredAuthentications=password -o PubkeyAuthentication=no"
+
+# direnv shortcuts
+alias dpx='pixi init . && echo "watch_file pixi.lock" > .envrc && echo "eval "$(pixi shell-hook)"" >> .envrc && direnv allow'
+alias dpy="echo 'layout python3' > .envrc && direnv allow"
